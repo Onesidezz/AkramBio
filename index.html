@@ -6,55 +6,99 @@
   <title>Mohammed Akram — Marriage Biodata</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cinzel:wght@400;500;600;700&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
-  <!-- =====================================================
-       PAGE WRAPPER
-  ====================================================== -->
   <div class="page">
-
-    <!-- =====================================================
-         CARD
-    ====================================================== -->
     <article class="card">
 
-      <!-- ── Decorative border frame ── -->
-      <div class="frame-tl"></div>
-      <div class="frame-tr"></div>
-      <div class="frame-bl"></div>
-      <div class="frame-br"></div>
+      <!-- Gold shimmer band at top -->
+      <div class="card__top-band"></div>
+
+      <!-- SVG Corner Ornaments -->
+      <div class="frame-tl" aria-hidden="true">
+        <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M2 2 L60 2" stroke="#c9a230" stroke-width="2.5" stroke-linecap="round"/>
+          <path d="M2 2 L2 60" stroke="#c9a230" stroke-width="2.5" stroke-linecap="round"/>
+          <path d="M12 2 L12 12 L2 12" stroke="#c9a230" stroke-width="1" opacity="0.5"/>
+          <circle cx="2" cy="2" r="4" fill="#c9a230"/>
+          <circle cx="60" cy="2" r="2" fill="#c9a230" opacity="0.4"/>
+          <circle cx="2" cy="60" r="2" fill="#c9a230" opacity="0.4"/>
+          <path d="M22 2 Q38 18 26 32 Q14 46 28 58" stroke="#c9a230" stroke-width="0.8" opacity="0.25" fill="none"/>
+          <circle cx="12" cy="12" r="2" fill="none" stroke="#c9a230" stroke-width="0.8" opacity="0.4"/>
+          <path d="M6 6 L8 8" stroke="#c9a230" stroke-width="0.8" opacity="0.3"/>
+        </svg>
+      </div>
+      <div class="frame-tr" aria-hidden="true">
+        <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M98 2 L40 2" stroke="#c9a230" stroke-width="2.5" stroke-linecap="round"/>
+          <path d="M98 2 L98 60" stroke="#c9a230" stroke-width="2.5" stroke-linecap="round"/>
+          <path d="M88 2 L88 12 L98 12" stroke="#c9a230" stroke-width="1" opacity="0.5"/>
+          <circle cx="98" cy="2" r="4" fill="#c9a230"/>
+          <circle cx="40" cy="2" r="2" fill="#c9a230" opacity="0.4"/>
+          <circle cx="98" cy="60" r="2" fill="#c9a230" opacity="0.4"/>
+          <path d="M78 2 Q62 18 74 32 Q86 46 72 58" stroke="#c9a230" stroke-width="0.8" opacity="0.25" fill="none"/>
+          <circle cx="88" cy="12" r="2" fill="none" stroke="#c9a230" stroke-width="0.8" opacity="0.4"/>
+        </svg>
+      </div>
+      <div class="frame-bl" aria-hidden="true">
+        <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M2 98 L60 98" stroke="#c9a230" stroke-width="2.5" stroke-linecap="round"/>
+          <path d="M2 98 L2 40" stroke="#c9a230" stroke-width="2.5" stroke-linecap="round"/>
+          <path d="M12 98 L12 88 L2 88" stroke="#c9a230" stroke-width="1" opacity="0.5"/>
+          <circle cx="2" cy="98" r="4" fill="#c9a230"/>
+          <circle cx="60" cy="98" r="2" fill="#c9a230" opacity="0.4"/>
+          <circle cx="2" cy="40" r="2" fill="#c9a230" opacity="0.4"/>
+          <path d="M22 98 Q38 82 26 68 Q14 54 28 42" stroke="#c9a230" stroke-width="0.8" opacity="0.25" fill="none"/>
+          <circle cx="12" cy="88" r="2" fill="none" stroke="#c9a230" stroke-width="0.8" opacity="0.4"/>
+        </svg>
+      </div>
+      <div class="frame-br" aria-hidden="true">
+        <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M98 98 L40 98" stroke="#c9a230" stroke-width="2.5" stroke-linecap="round"/>
+          <path d="M98 98 L98 40" stroke="#c9a230" stroke-width="2.5" stroke-linecap="round"/>
+          <path d="M88 98 L88 88 L98 88" stroke="#c9a230" stroke-width="1" opacity="0.5"/>
+          <circle cx="98" cy="98" r="4" fill="#c9a230"/>
+          <circle cx="40" cy="98" r="2" fill="#c9a230" opacity="0.4"/>
+          <circle cx="98" cy="40" r="2" fill="#c9a230" opacity="0.4"/>
+          <path d="M78 98 Q62 82 74 68 Q86 54 72 42" stroke="#c9a230" stroke-width="0.8" opacity="0.25" fill="none"/>
+          <circle cx="88" cy="88" r="2" fill="none" stroke="#c9a230" stroke-width="0.8" opacity="0.4"/>
+        </svg>
+      </div>
 
       <!-- =====================================================
            HEADER
       ====================================================== -->
       <header class="card__header">
 
+        <!-- Floating gold particles (populated by JS) -->
+        <div class="particles" aria-hidden="true"></div>
+
         <!-- Bismillah -->
-        <div class="bismillah" aria-label="Bismillah ir-Rahman ir-Rahim">
-          بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ
+        <div class="bismillah-wrap">
+          <div class="bismillah-rule"></div>
+          <div class="bismillah" aria-label="Bismillah ir-Rahman ir-Rahim">
+            بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ
+          </div>
+          <div class="bismillah-rule"></div>
         </div>
 
         <div class="header__inner">
 
-          <!-- Left: name + title -->
+          <!-- Left: name + tagline -->
           <div class="header__text">
             <p class="header__eyebrow">Marriage Biodata</p>
             <h1 class="header__name">Mohammed<br>Akram</h1>
             <div class="header__rule">
-              <span></span><span class="diamond">◆</span><span></span>
+              <span></span><span class="diamond">✦</span><span></span>
             </div>
             <p class="header__tagline">Software Engineer · Bengaluru</p>
           </div>
 
-          <!-- Right: profile photo -->
+          <!-- Right: profile photo in arch frame -->
           <div class="header__photo-wrap">
-            <!--
-              Profile photo: formal photo (white shirt / event backdrop)
-              File → images/profile.jpg
-            -->
             <div class="profile-frame">
               <img
                 class="profile-img"
@@ -66,7 +110,7 @@
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
                   <circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
                 </svg>
-                <span>Add profile.jpg</span>
+                <span>Photo</span>
               </div>
             </div>
           </div>
@@ -83,12 +127,11 @@
         <section class="section">
           <div class="section__heading">
             <span class="section__icon">
-              <!-- person SVG -->
               <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 10a4 4 0 100-8 4 4 0 000 8zm-7 9a7 7 0 1114 0H3z"/></svg>
             </span>
             <h2>Personal Details</h2>
+            <div class="section__line"></div>
           </div>
-          <div class="section__divider"></div>
           <dl class="info-table">
             <div class="info-row">
               <dt>Date of Birth</dt>
@@ -119,11 +162,11 @@
         <section class="section">
           <div class="section__heading">
             <span class="section__icon">
-              <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5 8.173V11a7 7 0 0010 0V8.173l2-0.858V11h2V7a1 1 0 00-.606-.92l-7-3zM10 15a5 5 0 01-5-5v-1.763l4.606 1.974a1 1 0 00.788 0L15 8.237V10a5 5 0 01-5 5z"/></svg>
+              <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5 8.173V11a7 7 0 0010 0V8.173l2-.858V11h2V7a1 1 0 00-.606-.92l-7-3zM10 15a5 5 0 01-5-5v-1.763l4.606 1.974a1 1 0 00.788 0L15 8.237V10a5 5 0 01-5 5z"/></svg>
             </span>
             <h2>Education &amp; Career</h2>
+            <div class="section__line"></div>
           </div>
-          <div class="section__divider"></div>
           <dl class="info-table">
             <div class="info-row">
               <dt>Higher Education</dt>
@@ -153,8 +196,8 @@
               <svg viewBox="0 0 20 20" fill="currentColor"><path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zm8 0a3 3 0 11-6 0 3 3 0 016 0zM1 14a7 7 0 0114 0H1zm16 0a7 7 0 00-8-6.93V14h8z"/></svg>
             </span>
             <h2>Family Details</h2>
+            <div class="section__line"></div>
           </div>
-          <div class="section__divider"></div>
           <dl class="info-table">
             <div class="info-row">
               <dt>Father's Name</dt>
@@ -188,21 +231,14 @@
               <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clip-rule="evenodd"/></svg>
             </span>
             <h2>Photo Gallery</h2>
+            <div class="section__line"></div>
           </div>
-          <div class="section__divider"></div>
 
-          <!--
-            DYNAMIC CAROUSEL
-            Automatically loads all images from the images/ folder.
-            Add/remove images in the data-images attribute (comma-separated filenames).
-          -->
           <div class="carousel" id="carousel" role="region" aria-label="Photo gallery"
                data-images="profilepic.jpeg,WhatsApp Image 2026-04-26 at 10.38.30 AM.jpeg,WhatsApp Image 2026-04-26 at 11.13.20 AM.jpeg,WhatsApp Image 2026-04-26 at 11.13.20 AM (1).jpeg,WhatsApp Image 2026-04-26 at 11.13.21 AM.jpeg,WhatsApp Image 2026-04-26 at 11.13.22 AM.jpeg,WhatsApp Image 2026-04-26 at 11.13.22 AM (1).jpeg,WhatsApp Image 2026-04-26 at 11.13.23 AM.jpeg,WhatsApp Image 2026-04-26 at 11.13.24 AM.jpeg,WhatsApp Image 2026-04-26 at 11.13.25 AM.jpeg,Screenshot 2026-04-26 112313.png">
 
-            <!-- Slides will be generated dynamically by JavaScript -->
             <div class="carousel__track" id="carouselTrack"></div>
 
-            <!-- Prev / Next arrows -->
             <button class="carousel__btn carousel__btn--prev" id="prevBtn" aria-label="Previous photo">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
             </button>
@@ -210,15 +246,13 @@
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
             </button>
 
-            <!-- Dot indicators (generated dynamically) -->
             <div class="carousel__dots" id="carouselDots" role="tablist" aria-label="Photo navigation"></div>
 
-            <!-- Counter -->
             <div class="carousel__counter">
               <span id="currentSlide">1</span> / <span id="totalSlides">0</span>
             </div>
 
-          </div><!-- /.carousel -->
+          </div>
         </section>
 
         <div class="section-sep"></div>
@@ -230,8 +264,8 @@
               <svg viewBox="0 0 20 20" fill="currentColor"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/></svg>
             </span>
             <h2>Contact Details</h2>
+            <div class="section__line"></div>
           </div>
-          <div class="section__divider"></div>
           <div class="contact-card">
             <dl class="info-table">
               <div class="info-row">
@@ -258,11 +292,34 @@
           <span></span>
         </div>
         <p class="footer__dua">May Allah bless this union with love, mercy, and prosperity</p>
+        <p class="footer__arabic">آمِيْن يَا رَبَّ الْعَالَمِيْن</p>
       </footer>
 
-    </article><!-- /.card -->
-  </div><!-- /.page -->
+    </article>
+  </div>
 
   <script src="js/carousel.js"></script>
+  <script>
+    /* Generate floating gold particles in header */
+    (function () {
+      var container = document.querySelector('.card__header .particles');
+      if (!container) return;
+      for (var i = 0; i < 28; i++) {
+        var p = document.createElement('span');
+        var size = (1.5 + Math.random() * 3.5).toFixed(1);
+        p.style.cssText = [
+          'left:'   + (4 + Math.random() * 92).toFixed(1) + '%',
+          'top:'    + (4 + Math.random() * 92).toFixed(1) + '%',
+          'width:'  + size + 'px',
+          'height:' + size + 'px',
+          'animation-delay:' + (Math.random() * 7).toFixed(2) + 's',
+          'animation-duration:' + (5 + Math.random() * 6).toFixed(2) + 's',
+          'opacity:' + (0.15 + Math.random() * 0.45).toFixed(2)
+        ].join(';');
+        p.setAttribute('aria-hidden', 'true');
+        container.appendChild(p);
+      }
+    })();
+  </script>
 </body>
 </html>
